@@ -1,17 +1,18 @@
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
+.item1 { grid-area: right; }
+.item2 { grid-area: left; }
+.item3 { grid-area: center; }
 .item4 { grid-area: right; }
 .item5 { grid-area: left; }
 .item6 { grid-area: center; }
-.item7 { grid-area: footer; }
+.item7 { grid-area: right; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'header header header header'
+    'left left left left'
+    'center center center center'
+    'right right right right';
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
